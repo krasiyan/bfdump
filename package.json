@@ -1,0 +1,31 @@
+{
+  "name": "bfdump",
+  "version": "0.0.0",
+  "description": "A small CLI tool for managing settings dumps from Betaflight flight controllers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krasiyan/bfdump"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet && prettier --check .",
+    "start": "node ./dist",
+    "dev": "tsnd --respawn ./src"
+  },
+  "author": "Krasiyan Nedelchev <hello@krasiyan.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/eslint": "^7.2.2",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "2.1.1",
+    "ts-node-dev": "^1.0.0-pre.62",
+    "typescript": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=12.8.0"
+  },
+  "engineStrict": true
+}
