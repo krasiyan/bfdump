@@ -1,1 +1,3 @@
-console.log("betatool");
+import { dumpData } from "./dump";
+
+dumpData().then(console.log);
